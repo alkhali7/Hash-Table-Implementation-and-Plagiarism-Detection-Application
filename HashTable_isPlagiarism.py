@@ -1,7 +1,6 @@
 """
-Hash Table Project
-CSE 331 FS23 (Onsay)
-solution.py
+Hash Table 
+Shams Alkhalidy
 """
 from __future__ import annotations
 
@@ -13,7 +12,6 @@ T = TypeVar("T")
 
 class HashNode:
     """
-    DO NOT EDIT
     """
     __slots__ = ["key", "value", "deleted"]
 
@@ -97,7 +95,6 @@ class HashTable:
 
     def __init__(self, capacity: int = 8) -> None:
         """
-        DO NOT EDIT
         Initializes hash table
         :param capacity: capacity of the hash table
         """
@@ -112,7 +109,6 @@ class HashTable:
 
     def __eq__(self, other: HashTable) -> bool:
         """
-        DO NOT EDIT
         Equality operator
         :param other: other hash table we are comparing with this one
         :return: bool if equal or not
@@ -126,7 +122,6 @@ class HashTable:
 
     def __str__(self) -> str:
         """
-        DO NOT EDIT
         Represents the table as a string
         :return: string representation of the hash table
         """
@@ -141,7 +136,6 @@ class HashTable:
 
     def _hash_1(self, key: str) -> int:
         """
-        ---DO NOT EDIT---
         Converts a string x into a bin number for our hash table
         :param key: key to be hashed
         :return: bin number to insert hash item at in our table, None if key is an empty string
@@ -156,7 +150,6 @@ class HashTable:
 
     def _hash_2(self, key: str) -> int:
         """
-        ---DO NOT EDIT---
         Converts a string x into a hash
         :param key: key to be hashed
         :return: a hashed value
@@ -175,7 +168,6 @@ class HashTable:
             hashed_value += 1
         return hashed_value
 
-    # ========== Modify below ========== #
 
     def __len__(self) -> int:
         """
